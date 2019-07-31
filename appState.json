@@ -1,0 +1,87 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "2cf92fbb-4263-480a-8ece-1e1d019a56c5": {
+        "id": "2cf92fbb-4263-480a-8ece-1e1d019a56c5",
+        "parent": null,
+        "name": "Project1",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "b502d785-7ffb-46f1-b551-0811b7646019"
+        ],
+        "isRemovable": false,
+        "filePath": "Project1"
+      },
+      "b502d785-7ffb-46f1-b551-0811b7646019": {
+        "id": "b502d785-7ffb-46f1-b551-0811b7646019",
+        "parent": "2cf92fbb-4263-480a-8ece-1e1d019a56c5",
+        "name": "lambda.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "Project1/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [],
+        "testCases": {
+          "1d8decb1-ef3e-4913-b8d3-5d56cb01a4af": {
+            "id": "1d8decb1-ef3e-4913-b8d3-5d56cb01a4af",
+            "name": "Test event",
+            "functionId": "b502d785-7ffb-46f1-b551-0811b7646019",
+            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "2cf92fbb-4263-480a-8ece-1e1d019a56c5",
+    "openFiles": [
+      "b502d785-7ffb-46f1-b551-0811b7646019"
+    ],
+    "currentFileId": "b502d785-7ffb-46f1-b551-0811b7646019",
+    "resources": {},
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "Project1",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1564555567813
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "Project1",
+      "url": "https://github.com/Kumudikatest/Project1",
+      "branches": []
+    }
+  }
+}
