@@ -1,21 +1,21 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "2cf92fbb-4263-480a-8ece-1e1d019a56c5": {
-        "id": "2cf92fbb-4263-480a-8ece-1e1d019a56c5",
+      "6486bf04-fcc9-4a63-b9a4-40de2db15f50": {
+        "id": "6486bf04-fcc9-4a63-b9a4-40de2db15f50",
         "parent": null,
         "name": "Project1",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "b502d785-7ffb-46f1-b551-0811b7646019"
+          "cd56b9fd-8801-44e3-a089-cc213938066e"
         ],
         "isRemovable": false,
         "filePath": "Project1"
       },
-      "b502d785-7ffb-46f1-b551-0811b7646019": {
-        "id": "b502d785-7ffb-46f1-b551-0811b7646019",
-        "parent": "2cf92fbb-4263-480a-8ece-1e1d019a56c5",
+      "cd56b9fd-8801-44e3-a089-cc213938066e": {
+        "id": "cd56b9fd-8801-44e3-a089-cc213938066e",
+        "parent": "6486bf04-fcc9-4a63-b9a4-40de2db15f50",
         "name": "lambda.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
@@ -32,30 +32,21 @@
         },
         "triggers": [
           {
-            "resourceName": "apigusEast1TestAPIany",
+            "resourceName": "apigusEast1TestAPIjanakaany",
             "config": {}
           }
-        ],
-        "testCases": {
-          "1d8decb1-ef3e-4913-b8d3-5d56cb01a4af": {
-            "id": "1d8decb1-ef3e-4913-b8d3-5d56cb01a4af",
-            "name": "Test event",
-            "functionId": "b502d785-7ffb-46f1-b551-0811b7646019",
-            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
-            "eventTemplate": "hello-world"
-          }
-        }
+        ]
       }
     },
     "deletedFiles": [],
-    "rootNode": "2cf92fbb-4263-480a-8ece-1e1d019a56c5",
+    "rootNode": "6486bf04-fcc9-4a63-b9a4-40de2db15f50",
     "openFiles": [
-      "b502d785-7ffb-46f1-b551-0811b7646019"
+      "cd56b9fd-8801-44e3-a089-cc213938066e"
     ],
-    "currentFileId": "b502d785-7ffb-46f1-b551-0811b7646019",
+    "currentFileId": "cd56b9fd-8801-44e3-a089-cc213938066e",
     "resources": {
-      "apigusEast1TestAPIany": {
-        "name": "apigusEast1TestAPIany",
+      "apigusEast1TestAPIjanakaany": {
+        "name": "apigusEast1TestAPIjanakaany",
         "type": "API_GATEWAY",
         "config": {
           "selectedRegion": "us-east-1",
@@ -65,23 +56,21 @@
           "endpointType": "EDGE",
           "rootResourceId": "h2lelj6j7k",
           "existingResources": {
-            "/hiru/test": "2b8zt0",
-            "/testPathWithSlash": "2rkw74",
-            "/hiru": "3nc52b",
-            "/hiru/sample": "4226gg",
-            "/hiru/sqstest": "88gr2y",
+            "/test": "1aztfv",
+            "/test/janaka": "3zhfku",
             "/MyLambda": "98nqbj",
-            "/fintech": "f1vucr",
+            "/test/foo": "alrh6s",
             "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
             "/testWithSlash": "q4m4g1",
             "/testtwospeciallambda": "q4szm3",
-            "/testtwospecialkumutest": "wey3lk",
-            "/hiru/snscheck": "wok1ku"
+            "/testtwospecialkumutest": "wey3lk"
           },
           "resourceMode": 1,
-          "resourcePath": "/",
-          "resourceName": "",
-          "resourceId": "h2lelj6j7k",
+          "resourcePath": "/test/janaka",
+          "resourceName": "janaka",
+          "resourceId": "3zhfku",
           "restMethod": "ANY",
           "proxyIntegration": false,
           "enableCORS": false,
@@ -94,7 +83,7 @@
     },
     "customTemplate": {
       "dialect": null,
-      "definitions": {}
+      "definitions": null
     },
     "envVariables": [
       {
@@ -117,19 +106,13 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1564555619393
+    "lastSave": 1567139594379
   },
   "VCS_STATE": {
     "provider": "GitHub",
     "repo": {
       "name": "Project1",
-      "url": "https://github.com/Kumudikatest/Project1",
-      "branches": [
-        {
-          "name": "master",
-          "hash": "3365ed22e03b3c4a6453f5275b465839d0d30c89"
-        }
-      ]
+      "url": "https://github.com/Kumudikatest/Project1"
     }
   }
 }
