@@ -1,21 +1,21 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "6486bf04-fcc9-4a63-b9a4-40de2db15f50": {
-        "id": "6486bf04-fcc9-4a63-b9a4-40de2db15f50",
+      "831093c4-ee33-4f6d-b338-65b58a91a999": {
+        "id": "831093c4-ee33-4f6d-b338-65b58a91a999",
         "parent": null,
         "name": "Project1",
         "type": "DIRECTORY",
         "isDirectory": true,
         "children": [
-          "cd56b9fd-8801-44e3-a089-cc213938066e"
+          "506e16a9-bd7a-4a99-9d5c-701ec9e8703f"
         ],
         "isRemovable": false,
         "filePath": "Project1"
       },
-      "cd56b9fd-8801-44e3-a089-cc213938066e": {
-        "id": "cd56b9fd-8801-44e3-a089-cc213938066e",
-        "parent": "6486bf04-fcc9-4a63-b9a4-40de2db15f50",
+      "506e16a9-bd7a-4a99-9d5c-701ec9e8703f": {
+        "id": "506e16a9-bd7a-4a99-9d5c-701ec9e8703f",
+        "parent": "831093c4-ee33-4f6d-b338-65b58a91a999",
         "name": "lambda.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
@@ -28,63 +28,39 @@
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
-          "layers": [],
-          "vpc": "vpc-ee1ef195",
-          "subNets": [
-            "subnet-993076a6"
-          ],
-          "secGroups": [
-            "sg-00c0e38b3ca019399"
-          ]
+          "layers": []
         },
         "triggers": [
           {
-            "resourceName": "apigusEast1TestAPIjanakaany",
+            "resourceName": "apigusEast1newktestpathany",
             "config": {}
           }
         ]
       }
     },
-    "deletedFiles": [],
-    "rootNode": "6486bf04-fcc9-4a63-b9a4-40de2db15f50",
+    "rootNode": "831093c4-ee33-4f6d-b338-65b58a91a999",
     "openFiles": [
-      "cd56b9fd-8801-44e3-a089-cc213938066e"
+      "506e16a9-bd7a-4a99-9d5c-701ec9e8703f"
     ],
-    "currentFileId": "cd56b9fd-8801-44e3-a089-cc213938066e",
+    "currentFileId": "506e16a9-bd7a-4a99-9d5c-701ec9e8703f",
     "resources": {
-      "apigusEast1TestAPIjanakaany": {
-        "name": "apigusEast1TestAPIjanakaany",
+      "apigusEast1newktestpathany": {
+        "name": "apigusEast1newktestpathany",
         "type": "API_GATEWAY",
         "config": {
           "selectedRegion": "us-east-1",
-          "apiMode": 1,
-          "apiName": "TestAPI",
-          "apiId": "0itznun7w3",
+          "apiMode": 0,
+          "apiName": "newk",
           "endpointType": "EDGE",
-          "rootResourceId": "h2lelj6j7k",
-          "existingResources": {
-            "/test": "1aztfv",
-            "/test/janaka": "3zhfku",
-            "/MyLambda": "98nqbj",
-            "/test/foo": "alrh6s",
-            "/": "h2lelj6j7k",
-            "/newchange/test": "k6pdhn",
-            "/newchange": "q1ox7l",
-            "/testWithSlash": "q4m4g1",
-            "/testtwospeciallambda": "q4szm3",
-            "/testtwospecialkumutest": "wey3lk"
-          },
-          "resourceMode": 1,
-          "resourcePath": "/test/janaka",
-          "resourceName": "janaka",
-          "resourceId": "3zhfku",
+          "resourceMode": 0,
+          "resourceName": "testpath",
+          "resourcePath": "/testpath",
           "restMethod": "ANY",
-          "proxyIntegration": false,
-          "enableCORS": false,
-          "stageMode": 1,
-          "stageName": "Test",
-          "stageDeploymentId": "v6elry",
-          "mode": 1
+          "proxyIntegration": true,
+          "enableCORS": true,
+          "stageMode": 0,
+          "stageName": "test",
+          "mode": 0
         }
       }
     },
@@ -113,7 +89,7 @@
     "projectRegion": "us-east-1",
     "platform": "AWS",
     "platformRegions": {},
-    "lastSave": 1567139710391
+    "lastSave": 1574919969544
   },
   "VCS_STATE": {
     "provider": "GitHub",
