@@ -1,98 +1,58 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "831093c4-ee33-4f6d-b338-65b58a91a999": {
-        "id": "831093c4-ee33-4f6d-b338-65b58a91a999",
+      "6a05dda3-23eb-4066-a707-ae03f17a89da": {
+        "id": "6a05dda3-23eb-4066-a707-ae03f17a89da",
         "parent": null,
-        "name": "Project1",
-        "type": "DIRECTORY",
-        "isDirectory": true,
-        "children": [
-          "506e16a9-bd7a-4a99-9d5c-701ec9e8703f"
-        ],
-        "isRemovable": false,
-        "filePath": "Project1"
-      },
-      "506e16a9-bd7a-4a99-9d5c-701ec9e8703f": {
-        "id": "506e16a9-bd7a-4a99-9d5c-701ec9e8703f",
-        "parent": "831093c4-ee33-4f6d-b338-65b58a91a999",
-        "name": "lambda.js",
-        "type": "JS_LAMBDA",
+        "name": "Project1.py",
+        "type": "PYTHON_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "Project1/lambda.js",
-        "code": "exports.handler = function(event, context, callback) {\n    var res = {\n  \"isBase64Encoded\": true,\n  \"statusCode\": 200,\n  \"headers\": {\n    \"headerName\": \"headerValue\"\n  },\n  \"body\": \"...\"\n}\n    \n    callback(null, {\"message\": res});\n}",
+        "filePath": "Project1.py",
+        "cursor": {
+          "lineNumber": 14,
+          "column": 17
+        },
         "config": {
-          "runtime": "nodejs8.10",
+          "runtime": "python3.8",
           "handler": "handler",
           "timeout": 60,
           "memory": 128,
-          "layers": []
+          "layers": [],
+          "name": "Project1"
         },
         "triggers": [
           {
-            "resourceName": "apigusEast1newktestpathpost",
-            "config": {}
+            "resourceName": "s3cloud9Ktest",
+            "config": {
+              "type": "s3:ObjectCreated:*",
+              "keyPrefix": "",
+              "keySuffix": ""
+            }
           }
-        ],
-        "testCases": {
-          "142dc4c2-63c7-4685-8636-f108d929772f": {
-            "id": "142dc4c2-63c7-4685-8636-f108d929772f",
-            "name": "Test event",
-            "functionId": "506e16a9-bd7a-4a99-9d5c-701ec9e8703f",
-            "event": "{\r\n    \"key1\": \"value1\",\r\n    \"key2\": \"value2\",\r\n    \"key3\": \"value3\"\r\n}",
-            "eventTemplate": "hello-world"
-          }
-        }
+        ]
       }
     },
-    "rootNode": "831093c4-ee33-4f6d-b338-65b58a91a999",
     "openFiles": [
-      "506e16a9-bd7a-4a99-9d5c-701ec9e8703f"
+      "6a05dda3-23eb-4066-a707-ae03f17a89da"
     ],
-    "currentFileId": "506e16a9-bd7a-4a99-9d5c-701ec9e8703f",
+    "currentFileId": "6a05dda3-23eb-4066-a707-ae03f17a89da",
     "resources": {
-      "apigusEast1newktestpathany": {
-        "name": "apigusEast1newktestpathany",
-        "type": "API_GATEWAY",
+      "s3cloud9Ktest": {
+        "name": "s3cloud9Ktest",
+        "type": "S3",
         "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 0,
-          "apiName": "newk",
-          "endpointType": "EDGE",
-          "resourceMode": 0,
-          "resourceName": "testpath",
-          "resourcePath": "/testpath",
-          "restMethod": "ANY",
-          "proxyIntegration": true,
-          "enableCORS": true,
-          "stageMode": 0,
-          "stageName": "test",
-          "mode": 0
-        }
-      },
-      "apigusEast1newktestpathpost": {
-        "name": "apigusEast1newktestpathpost",
-        "type": "API_GATEWAY",
-        "config": {
-          "selectedRegion": "us-east-1",
-          "apiMode": 0,
-          "apiName": "newk",
-          "endpointType": "EDGE",
-          "resourceMode": 0,
-          "resourceName": "testpath",
-          "resourcePath": "/testpath",
-          "restMethod": "POST",
-          "proxyIntegration": false,
-          "enableCORS": true,
-          "stageMode": 0,
-          "stageName": "test",
-          "mode": 0
+          "mode": 1,
+          "bucket": {
+            "region": "us-east-1",
+            "name": "cloud9-ktest"
+          }
         }
       }
     },
     "customTemplate": {
+      "overrideDefault": false,
       "dialect": null,
       "definitions": null
     },
@@ -107,7 +67,15 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "requests": {
+          "name": "requests",
+          "language": "python",
+          "version": "2.18.0",
+          "dev": false,
+          "notRemovable": false
+        }
+      }
     }
   },
   "PROJECT_META": {
@@ -116,14 +84,15 @@
     "projectVersion": "1.0.0",
     "projectRegion": "us-east-1",
     "platform": "AWS",
+    "language": "python",
     "platformRegions": {},
-    "lastSave": 1574920895299
+    "lastSave": 1587644996931
   },
   "VCS_STATE": {
     "provider": "GitHub",
     "repo": {
-      "name": "Project1",
-      "url": "https://github.com/Kumudikatest/Project1"
+      "name": "project1",
+      "url": "https://github.com/Kumudikatest/project1"
     }
   }
 }
